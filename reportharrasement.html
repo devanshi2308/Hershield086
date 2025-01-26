@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harassment Report Form</title>
+    <style>
+        body{
+            background-color:rgb(218, 201, 214) ;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Harassment Report</h1>
+    <p>Please fill in the details below to report an incident of harassment.</p>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Incident Details</th>
+            </tr>
+            <tr>
+                <td><label for="date">Date of Incident:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="time">Time of Incident:</label></td>
+                <td><input type="time" id="time" name="time" required></td>
+            </tr>
+            <tr>
+                <td><label for="location">Location of Incident:</label></td>
+                <td><input type="text" id="location" name="location" required></td>
+            </tr>
+            <tr>
+                <td><label for="description">Description of the Incident:</label></td>
+                <td><textarea id="description" name="description" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="witness">Were there any witnesses?</label></td>
+                <td><input type="text" id="witness" name="witness"></td>
+            </tr>
+            <tr>
+                <td><label for="reported">Have you reported this incident to police?</label></td>
+                <td><input type="text" id="reported" name="reported"></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Your Contact Information:</label></td>
+                <td><input type="text" id="contact" name="contact" required></td>
+            </tr>
+        </table>
+
+        <button type="submit">Submit Report</button>
+    </form>
+
+</body>
+</html>
